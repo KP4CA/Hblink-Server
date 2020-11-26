@@ -1,0 +1,15 @@
+[Unit]
+Description=HBlink
+
+After=network-online.target syslog.target
+Wants=network-online.target
+
+[Service]
+StandardOutput=null
+WorkingDirectory=/opt/Hblink-Server
+RestartSec=3
+ExecStart=/usr/bin/python3 /opt/Hblink-Server/monitor.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

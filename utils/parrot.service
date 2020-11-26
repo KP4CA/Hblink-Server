@@ -1,0 +1,15 @@
+[Unit]
+Description=Parrot
+
+After=network-online.target syslog.target
+Wants=network-online.target
+
+[Service]
+StandardOutput=null
+WorkingDirectory=/opt/Hblink-Install
+RestartSec=3
+ExecStart=/usr/bin/python3 /opt/Hblink-Install/playback.py -c /opt/Hblink-Install/playback.cfg
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
