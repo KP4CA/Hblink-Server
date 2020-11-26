@@ -8,7 +8,7 @@ Wants=network-online.target
 StandardOutput=null
 WorkingDirectory=/opt/Hblink-Server
 RestartSec=3
-ExecStart=/usr/bin/python3 /opt/Hblink-Server/monitor.py
+ExecStart=/usr/bin/python3 /opt/Hblink-Server/bridge.py
 Restart=on-abort
 
 [Install]
