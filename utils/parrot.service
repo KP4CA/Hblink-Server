@@ -6,9 +6,9 @@ Wants=network-online.target
 
 [Service]
 StandardOutput=null
-WorkingDirectory=/opt/Hblink-Install
+WorkingDirectory=/opt/Hblink-Server
 RestartSec=3
-ExecStart=/usr/bin/python3 /opt/Hblink-Install/playback.py -c /opt/Hblink-Install/playback.cfg
+ExecStart=/usr/bin/python3 /opt/Hblink-Server/playback.py -c /opt/Hblink-Server/playback.cfg
 Restart=on-abort
 
 [Install]
