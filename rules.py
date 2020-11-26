@@ -34,7 +34,7 @@ configuration file.
 
 BRIDGES = {
     'PARROT': [
-            {'SYSTEM': 'MASTER',    'TS': 2, 'TGID': 9999,    'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [9999], 'OFF': [320,7160,91,77,4630,777,31012,33015,98006,3199,7225,7227,37030], 'RESET': []},
+            {'SYSTEM': 'MASTER',    'TS': 2, 'TGID': 9999, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [9999], 'OFF': [320,7160,91,77,4630,777,31012,33015,98006,3199,7225,7227,37030], 'RESET': []},
             {'SYSTEM': 'PARROT',    'TS': 2, 'TGID': 9999, 'ACTIVE': True, 'TIMEOUT': 10, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
         ]
 }
